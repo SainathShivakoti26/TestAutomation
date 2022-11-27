@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-19T00:49:11 GMT" name="DSS Suite" finished-at="2022-11-19T00:49:27 GMT" duration-ms="16220">
+    <groups>
+    </groups>
+    <test started-at="2022-11-19T00:49:11 GMT" name="DSS Test" finished-at="2022-11-19T00:49:27 GMT" duration-ms="16220">
+      <class name="testClasses.FirstTestClass">
+        <test-method signature="accessTest()[pri:0, instance:testClasses.FirstTestClass@1e800aaa]" started-at="2022-11-19T00:49:27 GMT" name="accessTest" finished-at="2022-11-19T00:49:27 GMT" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessTest -->
+      </class> <!-- testClasses.FirstTestClass -->
+      <class name="automationbase.AutomationBase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationbase.AutomationBase@3b69e7d1]" started-at="2022-11-19T00:49:11 GMT" name="setUp" finished-at="2022-11-19T00:49:27 GMT" duration-ms="15914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationbase.AutomationBase@3b69e7d1]" started-at="2022-11-19T00:49:27 GMT" name="tearDown" finished-at="2022-11-19T00:49:27 GMT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automationbase.AutomationBase -->
+    </test> <!-- DSS Test -->
+  </suite> <!-- DSS Suite -->
+</testng-results>
