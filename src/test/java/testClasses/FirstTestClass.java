@@ -15,4 +15,11 @@ public class FirstTestClass extends AutomationBase {
     	webDriverWait.until(ExpectedConditions.visibilityOf(siteLogo));
         System.out.println("Page loaded successfully.....");
     }
+
+    @Test
+    public static boolean isSearchBarPresent() {
+        WebElement searchBar = driver.findElement(By.className("search-field"));
+        webDriverWait.until(ExpectedConditions.visibilityOf(searchBar));
+        return searchBar.isDisplayed();
+    }
 }
