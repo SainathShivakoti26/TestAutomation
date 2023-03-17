@@ -22,4 +22,18 @@ public class FirstTestClass extends AutomationBase {
         webDriverWait.until(ExpectedConditions.visibilityOf(searchBar));
         return searchBar.isDisplayed();
     }
+
+    @Test
+    public static void searchAnItem(String itemName) {
+        WebElement searchBar = driver.findElement(By.className("search-field"));
+        webDriverWait.until(ExpectedConditions.visibilityOf(searchBar));
+        if(searchBar.isDisplayed()) {
+            searchBar.click();
+            searchBar.clear();
+            searchBar.sendKeys(itemName);
+        }
+        WebElement searchButton = driver.findElement(By.className("search-submit"));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(searchButton));
+        searchButton.click();
+    }
 }
